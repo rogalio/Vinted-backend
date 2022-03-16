@@ -10,11 +10,14 @@ app.use(cors());
 // Permet l'accès aux variables d'environnement
 require("dotenv").config();
 
-mongoose.connect("processs.env.MONGODB_URI", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-});
+mongoose.connect(
+  "processs.env.MONGODB_URI"
+  //  {
+  //   useNewUrlParser: true,
+  //   useUnifiedTopology: true,
+  //   useCreateIndex: true,
+  // }
+);
 
 // Connexion à l'espace de stockage cloudinary
 cloudinary.config({
@@ -41,4 +44,3 @@ app.use(function (err, req, res, next) {
 const server = app.listen(3000, () => {
   console.log("Server started");
 });
-// server.timeout = Number(process.env.SERVER_TIMEOUT) || 1000000;

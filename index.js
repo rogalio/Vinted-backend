@@ -41,6 +41,6 @@ app.use(function (err, req, res, next) {
   res.json({ error: err.message });
 });
 
-const server = app.listen(3000, () => {
+const server = app.listen(process.env.PORT, () => {
   console.log("Server started");
 });

@@ -114,7 +114,6 @@ router.post("/offer/publish", isAuthenticated, async (req, res) => {
         req.files.picture.path,
         "vinted_upload",
         {
-          folder: `api/vinted/offers/${newOffer._id}`,
           public_id: "preview",
           cloud_name: "dy9aar7wt",
         }

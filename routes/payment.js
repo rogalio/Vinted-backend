@@ -3,6 +3,7 @@ const router = express.Router();
 const createStripe = require("stripe");
 const formidableMiddleware = require("express-formidable");
 router.use(formidableMiddleware());
+app.use(cors());
 
 /* Votre clé privée doit être indiquée ici */
 const stripe = createStripe(process.env.STRIPE_API_SECRET);

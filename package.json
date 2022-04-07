@@ -31,10 +31,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rogalio/vinted-main.git"
+    "url": "git+https://github.com/rogalio/Vinted-backend"
   },
   "bugs": {
-    "url": "https://github.com/rogalio/vinted-main/issues"
+    "url": "https://github.com/rogalio/Vinted-backend"
   },
-  "homepage": "https://github.com/rogalio/vinted-main#readme"
+  "homepage": "https://github.com/rogalio/Vinted-backend#readme"
 }

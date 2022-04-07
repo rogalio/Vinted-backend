@@ -5,7 +5,7 @@ const formidableMiddleware = require("express-formidable");
 router.use(formidableMiddleware());
 
 
-/* Votre clé privée doit être indiquée ici */
+// clé privée Stripe
 const stripe = createStripe(process.env.STRIPE_API_SECRET);
 
 // on réceptionne le token
